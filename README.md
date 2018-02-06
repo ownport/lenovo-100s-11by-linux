@@ -1,4 +1,4 @@
-# lenovo-100s-11by-linux
+# Getting Linux onto the Lenovo 100s
 
 Guides for installation linux on Lenovo 100s 11by
 
@@ -30,6 +30,8 @@ Guides for installation linux on Lenovo 100s 11by
 
 ### What are needed?
 
+The following two ISOs will be needed.
+
 - debian-live-9.1.0-i386-xfce.iso 
 - linuxmint-18.2-xfce-32bit.iso
 
@@ -37,7 +39,7 @@ Guides for installation linux on Lenovo 100s 11by
 ### Prepare USB stick
 
 ```sh
-$ sudo dd if=linuxmint-18.2-xfce-32bit.iso of=/dev/sda bs=4M
+$ sudo dd if=linuxmint-18.2-xfce-32bit.iso of=/dev/sdX bs=4M
 $ sync
 ```
 unplug and plug again USB stick
@@ -57,7 +59,10 @@ Disk identifier: 0x49b13675
 
 Device     Boot Start     End Sectors  Size Id Type
 /dev/sda1  *        0 2566143 2566144  1.2G 17 Hidden HPFS/NTFS
+```
+You can use the "n" command in fdisk to create a partition.
 
+```
 
 Command (m for help): p
 Disk /dev/sda: 14.7 GiB, 15728640000 bytes, 30720000 sectors
@@ -79,6 +84,8 @@ $ sudo mkfs.fat -F32 /dev/sda2
 The structure of /dev/sda2
 - /efi/boot/bootia32.efi (from Debian 32 bit installation)
 - /efi/boot/i386-efi/* (from Debian 32 bit installation)
+
+- copy all directories and files from the Mint ISO (other than the boot directory) to your sdX2 partition
 
 
 ### Boot from USB stick
