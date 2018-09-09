@@ -25,6 +25,22 @@ Guides for installation linux on Lenovo 100s 11by
 | WiFi and Bluetooth®    | WiFi 1 x 1 802.11 b/g/n, Bluetooth® 4.0                    |
 | Connectors             | 2 x USB 2.0, HDMI-out, microSD card slot, audio combo jack |
 
+## Installation
+
+- For Lubuntu installation follow instructions in the file lubuntu/install.md
+- For Mint installation follow instructions in the file mint/install.md
+
+## Status
+
+|            | Lubuntu     | Xfce        |
+| ---------- | ----------- | ----------- |
+| Keyboard   | working     | working     |
+| Touchpad   | working     | working     |
+| WiFi       | working     | working     |
+| Sound      | not working | not working |
+| Bluethooth | not working | not working |
+| Battery    | working     | working     |
+
 
 
 
