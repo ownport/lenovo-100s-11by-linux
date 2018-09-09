@@ -48,7 +48,7 @@ The first partition with installation files, second one for EFI boot. In case if
 $ sudo mkfs.fat -F32 /dev/sda2
 ```
 
-The fist partition we will not touch, for second partition /dev/sda2 we will need to create the next structure and copy the next files from assets file `debian-9.5.0-boot.taz.bz2`:
+The fist partition we will not touch, for second partition /dev/sda2 we will need to create the next structure and copy the next files from assets file `debian-9.5.0-boot.taz.bz2` https://github.com/ownport/lenovo-100s-11by-linux/releases/:
 
 - /efi/boot/bootia32.efi
 - /efi/boot/i386-efi/* 
@@ -72,4 +72,3 @@ After Lubuntu Live started please follow the installation instructions
 ### TODO
 
 - need to install `apt install grub-efi-ia32`
-
